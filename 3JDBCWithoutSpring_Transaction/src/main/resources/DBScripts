@@ -1,0 +1,8 @@
+CREATE TABLE `system`.`ACCOUNT` (
+  `accnum` INT NOT NULL,
+  `name` VARCHAR(45) NULL,
+  `balance` DECIMAL(8,2) NULL
+);
+
+INSERT INTO `system`.`ACCOUNT` values(1, "rama",9000);
+INSERT INTO `system`.`ACCOUNT` values(2, "mohan",2000);

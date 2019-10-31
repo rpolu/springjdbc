@@ -35,13 +35,7 @@ public class UserDAO {
 		}
 	}
 
-	private void closeConnection(Connection connection) {
-		try {
-			connection.close();
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
-	}
+	
 
 	public User getUser(int id) {
 		User user = null;
@@ -137,6 +131,13 @@ public class UserDAO {
 					t = t.getCause();
 				}
 			}
+		}
+	}
+	private void closeConnection(Connection connection) {
+		try {
+			connection.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
 		}
 	}
 
