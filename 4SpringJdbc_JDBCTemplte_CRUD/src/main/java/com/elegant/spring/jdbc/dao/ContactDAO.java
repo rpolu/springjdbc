@@ -12,7 +12,11 @@ public interface ContactDAO {
 
 	public void deleteContact(int contactId);
 
+	public String getPhoneNumber(int contactId);
+
+	public Contact getPhoneAndEmail(int contactId);
+
 	public Contact getContact(int contactId);
 
-	public List<Contact> contactlist();
+	public List<Contact> getAllContacts();
 }
