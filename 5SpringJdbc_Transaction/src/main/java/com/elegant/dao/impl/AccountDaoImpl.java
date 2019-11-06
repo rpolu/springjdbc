@@ -9,7 +9,7 @@ import com.elegant.dao.AccountDao;
 @Repository
 public class AccountDaoImpl implements AccountDao {
 	private static final String UPDATE_WITHDRAW_BAL = "UPDATE ACCOUNT SET balance =balance - ? WHERE ACCNUM = ?";
-	private static final String UPDATE_DEPOSITE_BAL = "UPDATE ACCOUNT SET balance =balance + ? WHERE ACCNU = ?";
+	private static final String UPDATE_DEPOSITE_BAL = "UPDATE ACCOUNT SET balance =balance + ? WHERE ACCNUM= ?";
 
 	@Autowired
 	private JdbcTemplate jdbcTemplate;
