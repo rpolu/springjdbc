@@ -11,6 +11,7 @@ import com.elegant.jdbc.model.User;
 import com.elegant.jdbc.util.ConnectionUtils;
 
 public class UserDAO {
+	// In this example 
 	private static final String INSERT_USERS_SQL = "INSERT INTO USERS   (NAME, EMAIL, COUNTRY) VALUES  (?, ?, ?)";
 	private static final String SELECT_USER_BY_ID = "SELECT ID,NAME,EMAIL,COUNTRY FROM USERS WHERE ID =?";
 	private static final String SELECT_ALL_USERS = "SELECT * FROM USERS";
