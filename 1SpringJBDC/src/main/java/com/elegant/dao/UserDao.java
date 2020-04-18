@@ -6,4 +6,6 @@ public interface UserDao {
 
 	public void saveUser(UserModel userModel);
 
+	public void deletUser(int userId);
+
 }

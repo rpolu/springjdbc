@@ -5,7 +5,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import com.elegant.dao.UserDao;
 import com.elegant.model.UserModel;
 
-public class Test1 {
+public class TestInsert {
 
 	public static void main(String[] args) {
 		ClassPathXmlApplicationContext ac = new ClassPathXmlApplicationContext("spring-config.xml");
