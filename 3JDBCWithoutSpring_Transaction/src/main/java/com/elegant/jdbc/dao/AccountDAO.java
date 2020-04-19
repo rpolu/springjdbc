@@ -9,7 +9,7 @@ import com.elegant.jdbc.util.ConnectionUtils;
 public class AccountDAO {
 
 	private static final String UPDATE_WITHDRAW_BAL = "UPDATE ACCOUNT SET balance =balance - ? WHERE ACCNUM = ?";
-	private static final String UPDATE_DEPOSITE_BAL = "UPDATE ACCOUNT SET balance =balance + ? WHER ACCNUM = ?";
+	private static final String UPDATE_DEPOSITE_BAL = "UPDATE ACCOUNT SET balance =balance + ? WHERE ACCNUM = ?";
 
 	public void fundsTranfer(int fromAcc, int toAcc, float bal) {
 		Connection connection = null;
