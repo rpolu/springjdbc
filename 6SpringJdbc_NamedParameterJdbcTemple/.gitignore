@@ -1,0 +1,48 @@
+
+# Backupfiles from mergetools #
+*.orig
+# Java Class Files #
+*.class
+# Package Files #
+*.jar
+*.war
+*.ear
+*.zip
+# Eclipse #
+/.project
+/.settings
+bin/**
+# Maven #
+target/
+/.mvn
+/.maven
+/.repository
+.flattened-pom.xml
+# Jave related
+target/**
+*.jar
+*.war
+*.ear
+*.class
+
+# eclipse specific
+*.pydevproject
+.project
+.metadata
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch

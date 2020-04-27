@@ -1,0 +1,5 @@
+create or replace function manpulate(a1 IN number,a2 IN number) return number
+	is
+	total number(5);
+	begin total:=a1+a2; return total; end;
+/

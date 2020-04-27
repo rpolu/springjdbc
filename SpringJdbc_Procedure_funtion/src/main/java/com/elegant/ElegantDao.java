@@ -1,5 +1,7 @@
 package com.elegant;
 
+import java.math.BigDecimal;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
@@ -14,12 +16,21 @@ public class ElegantDao {
 
 	public void callProcudure(int id, String name, float amt) {
 		SimpleJdbcCall simpleJdbcCall = new SimpleJdbcCall(jdbcTemplate).withProcedureName("insertData");
-		SqlParameterSource in = new MapSqlParameterSource().addValue("in_id", id).addValue("in_name", name)
-				.addValue("in_name", name).addValue("in_salary", amt);
+
+		SqlParameterSource in = new MapSqlParameterSource().addValue("id", id).addValue("name", name).addValue("amt",
+				amt);
+
 		simpleJdbcCall.execute(in);
 	}
 
-	public void callFunction() {
+	public BigDecimal callFunction(int n1, int n2) {
+
+		SimpleJdbcCall simpleJdbcCall = new SimpleJdbcCall(jdbcTemplate).withFunctionName("manpulate");
+
+		SqlParameterSource in = new MapSqlParameterSource().addValue("a1", n1).addValue("a2", n2);
+
+		BigDecimal sum = simpleJdbcCall.executeFunction(BigDecimal.class, in);
+		return sum;
 
 	}
 

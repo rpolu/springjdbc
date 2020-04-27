@@ -1,18 +1,5 @@
-create table Employee(
-	id number(10) ,
-	name varchar2(50),
-	salary number(10,2)
-);
-create table Account(
-	acnum number(10) ,
-	name varchar2(50),
-	salary number(10,2)
-);
-
-create or replace procedure insertData(id IN number , name IN varchar,amt IN number)
-	 is
-	 begin
-		insert into Employee values(id,name,amt);
-		insert into Account values(id,name,amt);
-	 end;
+create or replace function manpulate(a1 IN number,a2 IN number) return number
+is
+total number(5);
+begin total:=a1+a2; return total; end;
 /

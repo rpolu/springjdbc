@@ -15,7 +15,7 @@ public class StoredProcedureExample {
 		cst.setString(2, "ram");
 		cst.setFloat(3, 899);
 		cst.execute();
-		System.out.println(" procedure calles succe fully");
+		System.out.println("Procedure calles succe fully");
 		cst.close();
 		con.close();
 
