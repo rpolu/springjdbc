@@ -15,7 +15,7 @@ public class AccountDAO {
 		Connection connection = null;
 		try {
 			connection = ConnectionUtils.getConnection();
-			connection.setAutoCommit(false);
+			connection.setAutoCommit(false);//
 
 			PreparedStatement preparedStatement = connection.prepareStatement(UPDATE_WITHDRAW_BAL);
 			preparedStatement.setFloat(1, bal);
@@ -29,7 +29,7 @@ public class AccountDAO {
 			System.out.println(preparedSt);
 			preparedSt.executeUpdate();
 
-			connection.commit();
+			connection.commit();//
 		} catch (SQLException e) {
 			e.printStackTrace();
 			try {
