@@ -14,17 +14,16 @@
             http://www.springframework.org/schema/tx 
             http://www.springframework.org/schema/tx/spring-tx.xsd">
 	<context:annotation-config />
-	<context:component-scan
-		base-package="com.elegant" />
+	<context:component-scan base-package="com.elegant" />
+
+	<context:property-placeholder location="classpath:db.properties" />
 
 	<bean id="ds"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-		<property name="driverClassName"
-			value="oracle.jdbc.driver.OracleDriver" />
-		<property name="url"
-			value="jdbc:oracle:thin:@localhost:1521:XE" />
-		<property name="username" value="system" />
-		<property name="password" value="tiger" />
+		<property name="driverClassName" value="${db.driverclass}" />
+		<property name="url" value="${db.url}" />
+		<property name="username" value="${db.username}" />
+		<property name="password" value="${db.password}" />
 	</bean>
 
 	<bean id="jdbcTemplate"

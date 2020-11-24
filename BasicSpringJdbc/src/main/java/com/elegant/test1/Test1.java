@@ -11,15 +11,13 @@ public class Test1 {
 		StudentDao studentDao = cpxac.getBean(StudentDao.class);
 
 		StudentModel sd = new StudentModel();
-		sd.setRollNum(10);
-		sd.setName("rama");
-		sd.setMarks(90);
-		sd.setAddress("Bangalore");
+		sd.setRollNum(11);
+		sd.setName("mohan");
+		sd.setMarks(35);
+		sd.setAddress("Kadapa");
 		studentDao.saveStudent(sd);
 
 		System.out.println("Saved the Student Data");
 		cpxac.close();
-
 	}
-
 }
