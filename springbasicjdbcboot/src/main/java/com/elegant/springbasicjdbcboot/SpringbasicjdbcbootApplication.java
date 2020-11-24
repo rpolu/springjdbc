@@ -21,10 +21,12 @@ public class SpringbasicjdbcbootApplication {
 		studentModel.setName("NBK");
 		studentModel.setMarks(90);
 		studentModel.setAddress("Nimmakur");
-
 		studentDao.saveStudent(studentModel);
-
 		System.out.println("Student data saved successfully");
+
+		studentDao.deleteStudent(111);
+
+		System.out.println("Student data deleted successfully");
 	}
 
 }
