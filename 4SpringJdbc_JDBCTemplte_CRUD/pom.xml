@@ -6,7 +6,7 @@
 	<artifactId>4SpringJdbc_JDBCTemplte_CRUD</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<properties>
-		<spring.framework>4.3.0.RELEASE</spring.framework>
+		<spring.framework>5.2.0.RELEASE</spring.framework>
 	</properties>
 	<dependencies>
 		<dependency>
