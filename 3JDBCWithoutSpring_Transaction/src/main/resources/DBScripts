@@ -1,8 +1,9 @@
-CREATE TABLE `system`.`ACCOUNT` (
-  `accnum` INT NOT NULL,
-  `name` VARCHAR(45) NULL,
-  `balance` DECIMAL(8,2) NULL
+CREATE TABLE ACCOUNT (
+  accnum NUMBER(10),
+  name VARCHAR2(45),
+  balance NUMBER(10,2)
 );
 
-INSERT INTO `system`.`ACCOUNT` values(1, "rama",9000);
-INSERT INTO `system`.`ACCOUNT` values(2, "mohan",2000);
+INSERT INTO ACCOUNT values(1, 'rama',9000);
+INSERT INTO ACCOUNT values(2, 'mohan',2000);
+
